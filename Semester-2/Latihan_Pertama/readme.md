@@ -8,7 +8,7 @@
 
 ---
 
-# Deskripsi (Bahasa Indonesia)
+## Deskripsi (Bahasa Indonesia)
 
 Program ini merupakan latihan implementasi **Object Oriented Programming (OOP)** menggunakan bahasa **Java**.
 Program ini memodelkan beberapa **bangun dua dimensi** yaitu **Bujur Sangkar** dan **Lingkaran** yang diturunkan dari satu kelas induk.
@@ -23,9 +23,9 @@ Program akan menampilkan **nama bangun datar** dan **hasil perhitungan luasnya**
 
 ---
 
-# Struktur File
+## Struktur File
 
-```
+``` text
 Latihan_Pertama
 │
 ├── BidangDuaDimensi.java
@@ -36,7 +36,7 @@ Latihan_Pertama
 
 ---
 
-# Penjelasan File (Bahasa Indonesia)
+## Penjelasan File (Bahasa Indonesia)
 
 ### BidangDuaDimensi.java
 
@@ -59,7 +59,7 @@ Isi dari kelas ini:
 * Atribut `sisi`
 * Override method `luas()` untuk menghitung luas bujur sangkar dengan rumus:
 
-```
+``` text
 luas = sisi × sisi
 ```
 
@@ -74,7 +74,7 @@ Isi dari kelas ini:
 * Atribut `radius`
 * Override method `luas()` untuk menghitung luas lingkaran dengan rumus:
 
-```
+``` text
 luas = π × r²
 ```
 
@@ -93,7 +93,7 @@ Di dalam kelas ini:
 
 ---
 
-# English Version
+## English Version
 
 ## Description
 
@@ -113,7 +113,7 @@ The program displays the **name of the shape** and its **calculated area**.
 
 ## File Structure
 
-```
+``` text
 Latihan_Pertama
 │
 ├── BidangDuaDimensi.java
@@ -126,7 +126,7 @@ Latihan_Pertama
 
 ## File Explanation
 
-### BidangDuaDimensi.java
+### BidangDuaDimensi.java (Eng)
 
 This class acts as the **parent class (superclass)** representing a general two dimensional shape.
 
@@ -138,7 +138,7 @@ Contents of this class:
 
 ---
 
-### BujurSangkar.java
+### BujurSangkar.java (Eng)
 
 This class is a **child class derived from BidangDuaDimensi** representing a **Square**.
 
@@ -147,13 +147,13 @@ Contents of this class:
 * Attribute `sisi`
 * Overrides the `luas()` method to calculate the area of a square using the formula
 
-```
+``` text
 area = side × side
 ```
 
 ---
 
-### Lingkaran.java
+### Lingkaran.java (Eng)
 
 This class is another **child class derived from BidangDuaDimensi** representing a **Circle**.
 
@@ -162,13 +162,13 @@ Contents of this class:
 * Attribute `radius`
 * Overrides the `luas()` method to calculate the area of a circle using the formula
 
-```
+``` text
 area = π × r²
 ```
 
 ---
 
-### Main.java
+### Main.java (Eng)
 
 This class serves as the **main entry point** of the program.
 
@@ -179,5 +179,5 @@ Inside this class:
 * Calls the `info()` method
 * Displays the calculated area of each shape
 
-```
+``` text
 ```
