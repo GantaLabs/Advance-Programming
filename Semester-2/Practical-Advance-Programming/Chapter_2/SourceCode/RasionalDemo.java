@@ -10,6 +10,9 @@ public class RasionalDemo{
         System.out.println();
         
         System.out.println("R1 > R2 : " + R1.moreThan(R2));
+        System.out.println("R1 < R2 : " + R1.lessThan(R2));
+        System.out.println("R1 <= R2 : " + R1.lessEqual(R2));
+        System.out.println("R1 >= R2 : " + R1.moreEqual(R2));
         System.out.println();
 
         System.out.print("R1 : ");
@@ -41,5 +44,20 @@ public class RasionalDemo{
         System.out.print("Nilai dari 'R1 += R2' : ");
         R1.cetak();
         System.out.println();
+
+        R1.minus(R2);
+        System.out.print("R1 - R2 : ");
+        R1.cetak();
+
+        R1 = new Rasional(1,2);
+        R1.kali(R2);
+        System.out.print("R1 * R2 : ");
+        R1.cetak();
+
+        R1 = new Rasional(1,2);
+        R1.bagi(R2);
+        System.out.print("R1 / R2 : ");
+        R1.cetak();
+
     }
 }

@@ -23,8 +23,8 @@ public class Rasional{
         A = (pembilang<penyebut) ? penyebut:pembilang;
         B = (pembilang<penyebut) ? pembilang:penyebut;
 
-        while (B != 0){
-            temp= A % B;
+        for (; B != 0; ){
+            temp = A % B;
             A = B;
             B = temp;
         }
@@ -50,4 +50,36 @@ public class Rasional{
     public void cetak(){
         System.out.println(pembilang + "/" + penyebut);
     }
+
+    //operator <
+    public boolean lessThan(Rasional A){
+        return (pembilang * A.penyebut < penyebut * A.pembilang);
+    }
+
+    //operator <=
+    public boolean lessEqual(Rasional A){
+        return (pembilang * A.penyebut <= penyebut * A.pembilang);
+    }
+
+    //operator >=
+    public boolean moreEqual(Rasional A){
+        return (pembilang * A.penyebut >= penyebut * A.pembilang);
+    }
+    //operator -
+    public void minus(Rasional A){
+        pembilang = pembilang * A.penyebut - penyebut * A.pembilang;
+        penyebut = penyebut * A.penyebut;
+    }
+
+    //operator *
+    public void kali(Rasional A){
+        pembilang = pembilang * A.pembilang;
+        penyebut = penyebut * A.penyebut;
+    }
+
+    //operator /
+    public void bagi(Rasional A){
+        pembilang = pembilang * A.penyebut;
+        penyebut = penyebut * A.pembilang;
+}
 }
