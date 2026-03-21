@@ -1,3 +1,5 @@
+package Chapter_3.SourceCode;
+
 public class lingkaran {
     int alas, tinggi;
 
@@ -15,7 +17,6 @@ public class lingkaran {
         this.tinggi = Integer.parseInt(str2);
     }
     
-
     public void setAlas(int alas){
         this.alas = alas;
     }
